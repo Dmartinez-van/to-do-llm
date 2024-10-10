@@ -2,6 +2,7 @@
 import { AppShell, Group } from '@mantine/core'
 import { GiMouthWatering } from 'react-icons/gi'
 import { BsChatLeftTextFill } from 'react-icons/bs'
+import TaskList from './components/TaskList/TaskList'
 
 export default function Home() {
   return (
@@ -15,7 +16,9 @@ export default function Home() {
           </Group>
         </AppShell.Header>
 
-        <AppShell.Main>Tasks should appear here</AppShell.Main>
+        <AppShell.Main>
+          <TaskList />
+        </AppShell.Main>
         <AppShell.Footer
           className="flex justify-end items-center"
           withBorder={false}
